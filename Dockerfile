@@ -5,7 +5,7 @@ ADD . /app
 WORKDIR /app
 RUN npm install
 RUN apt-get update
-RUN apt-get install -y vim aptitude
+RUN apt-get install -y vim aptitude sudo
 RUN useradd -m -s /bin/bash ysc
 RUN adduser ysc sudo
 RUN echo 'ysc:ysc' | chpasswd
